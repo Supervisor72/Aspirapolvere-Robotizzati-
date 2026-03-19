@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz Robot Aspirapolvere — DML Italia</title>
+<title>Quiz iRobot Roomba — DML Italia</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
@@ -36,7 +36,7 @@ select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%
 .info-box{background:#F1EFE8;border-radius:var(--rsm);padding:10px 14px;font-size:13px;color:#5F5E5A;margin-bottom:14px;line-height:1.5;}
 .top-bar{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap;}
 .timer-pill{display:flex;align-items:center;gap:7px;padding:7px 14px;border-radius:999px;border:1px solid var(--border);background:var(--surface);transition:all .3s;}
-.timer-dot{width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0;transition:background .3s;}
+.timer-dot{width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0;}
 .timer-val{font-family:'DM Mono',monospace;font-size:15px;font-weight:500;color:var(--text);min-width:52px;}
 .timer-pill.warn{border-color:var(--amber);background:var(--amber-light);}
 .timer-pill.warn .timer-dot{background:var(--amber);}
@@ -102,136 +102,136 @@ select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%
 <body>
 <div class="wrap">
   <div class="brand">DML Italia · Formazione Prodotto</div>
-  <h1>Test Robot Aspirapolvere</h1>
-  <p class="subtitle">20 domande · Timer 6 minuti · iRobot Roomba · Roborock</p>
+  <h1>Test iRobot Roomba — Lineup Completa</h1>
+  <p class="subtitle">20 domande · Timer 9 minuti · Roomba Combo · j-series · s-series · Vac series</p>
   <div id="app"></div>
 </div>
 <script>
-const TOTAL_SECONDS = 360;
+const TOTAL_SECONDS = 540;
 const DEST_EMAIL = "d.pavoni@dml-italia.com";
 const STORES = ["Fano","Monsano","Osimo","Macerata","Civitanova","Pesaro","Foligno"];
 const LETTERS = ["A","B","C","D"];
 
 const questions = [
   {
-    q:"Cosa indica la potenza di aspirazione espressa in Pascal (Pa) in un robot aspirapolvere?",
-    opts:["La durata della batteria in minuti","La forza di aspirazione: più alta è la pressione in Pa, maggiore è la capacità di raccogliere sporco, peli di animali e detriti dai tappeti","La velocità di spostamento del robot in cm/s","La capacità del serbatoio dell'acqua in millilitri"],
+    q:"Qual è la tecnologia di navigazione alla base dei modelli Roomba j-series e s-series, e come si chiama il sistema di riconoscimento ostacoli?",
+    opts:["Navigazione casuale con sensori a infrarossi — senza mappa","iAdapt 3.0 con PrecisionVision Navigation: fotocamera + AI per riconoscere e classificare oltre 80 tipi di ostacoli domestici (cavi, calzini, escrementi animali)","Navigazione LiDAR laser rotante come i robot cinesi","Navigazione GPS satellitare con mappa dell'abitazione"],
     ans:1,
-    exp:"I Pascal (Pa) misurano la pressione di aspirazione. Un robot da 2.000 Pa è ottimo per pavimenti lisci; per tappeti profondi e peli di animali servono almeno 5.000–10.000 Pa. I top di gamma Roborock arrivano a 22.000 Pa."
+    exp:"iAdapt 3.0 con PrecisionVision Navigation usa una fotocamera rivolta verso il basso abbinata ad AI per identificare ostacoli specifici. La funzione P.O.O.P. (Pet Owner Official Promise) garantisce che il robot non passi su escrementi di animali — uno dei punti di vendita più efficaci con i clienti con animali domestici."
   },
   {
-    q:"Cosa si intende con 'stazione di svuotamento automatico' (Auto-Empty Base) nei robot aspirapolvere top di gamma?",
-    opts:["Una funzione che permette al robot di svuotarsi da solo nel cestino della cucina","Una base di ricarica che aspira automaticamente lo sporco dal serbatoio del robot in un sacchetto/contenitore capiente (fino a 60 giorni di autonomia)","Un sistema che lava automaticamente i filtri del robot","Una stazione che ricarica il robot in 30 minuti"],
+    q:"Cosa fa la funzione 'Dirt Detect' presente su quasi tutti i modelli Roomba?",
+    opts:["Fotografa lo sporco e invia una notifica all'app iRobot","Sensori acustici e ottici rilevano zone di sporco concentrato: il robot rallenta e aumenta i passaggi su quell'area finché non è pulita a fondo","Rileva il tipo di pavimento (parquet, ceramica, tappeto) e regola la potenza","Manda un alert quando il contenitore è pieno"],
     ans:1,
-    exp:"La stazione di svuotamento automatico aspira lo sporco accumulato nel robot trasferendolo in un sacchetto o contenitore interno alla base. I modelli top hanno basi con contenitori da 2,5–3,5 litri che durano fino a 60 giorni senza intervento manuale."
+    exp:"Dirt Detect combina sensori piezoelettrici (suono dei detriti aspirati) e sensori ottici per individuare concentrazioni di sporco. Quando le trova, il robot esegue automaticamente più passaggi intensivi su quella zona prima di proseguire — utile da spiegare ai clienti con animali o bambini."
   },
   {
-    q:"iRobot è stata acquisita da quale azienda nel 2023, cambiando la sua direzione strategica?",
-    opts:["Samsung Electronics","Amazon, che ha poi ceduto il marchio a SharkNinja nel 2024 dopo il blocco antitrust UE","Dyson","Xiaomi / Roborock"],
+    q:"Qual è la principale differenza tra la serie Roomba Vac (solo aspirazione) e la serie Roomba Combo?",
+    opts:["Roomba Vac è solo per tappeti, Combo solo per pavimenti duri","La serie Combo integra anche la funzione lavapavimenti con un pad bagnato, oltre all'aspirazione — la serie Vac fa solo aspirazione","Roomba Combo è più potente in aspirazione rispetto alla Vac","La serie Vac si connette al Wi-Fi, la Combo no"],
     ans:1,
-    exp:"Amazon aveva annunciato l'acquisizione di iRobot per 1,7 miliardi di dollari, ma l'UE ha bloccato l'operazione per antitrust. A seguito del fallimento dell'accordo, iRobot ha attraversato una crisi profonda con licenziamenti massivi, cedendo poi attività a SharkNinja."
+    exp:"La distinzione Vac/Combo è fondamentale per orientare il cliente: chi ha solo pavimenti duri e tappeti può valutare entrambe; chi vuole anche lavare il pavimento deve necessariamente scegliere un modello Combo. I modelli Combo partono da fasce di prezzo più alte."
   },
   {
-    q:"Qual è la tecnologia di navigazione utilizzata dai modelli iRobot Roomba j-series e s-series?",
-    opts:["Navigazione casuale con bump sensor (rimbalzo)","iAdapt 3.0 con PrecisionVision Navigation: fotocamera + AI per riconoscere ostacoli specifici (cavi, calzini, escrementi animali) ed evitarli","Navigazione LiDAR laser come Roborock","Navigazione GPS satellitare"],
+    q:"Roomba Combo j9+: qual è la tecnologia esclusiva per la gestione del mop sui tappeti?",
+    opts:["Il pad bagnato è fisso e sempre a contatto, si deve creare una zona di esclusione nell'app","Il mop si solleva automaticamente e si ritrae nel corpo del robot quando rileva un tappeto — senza zone di esclusione manuali","Il robot evita i tappeti solo se si crea una barriera magnetica fisica","Il mop si smonta automaticamente e resta sulla base di ricarica"],
     ans:1,
-    exp:"I Roomba j-series e s-series usano PrecisionVision Navigation: una fotocamera rivolta verso il basso abbinata ad AI per identificare e aggirare oltre 80 tipologie di ostacoli domestici, inclusi escrementi di animali domestici — funzione chiamata Pet Owner Official Promise (P.O.O.P.)."
+    exp:"Il Roomba Combo j9+ ha un braccio retrattile che solleva il pad bagnato nel corpo del robot non appena rileva le fibre del tappeto. Quando torna sul pavimento duro, lo riabbassa. Zero configurazione nell'app — un argomento di vendita potente per chi ha pavimenti misti."
   },
   {
-    q:"Cosa significa la sigla 'LiDAR' nella navigazione dei robot Roborock?",
-    opts:["Light Detection And Ranging: un sensore laser rotante che misura la distanza dagli oggetti per creare mappe 3D precise dell'ambiente","Un sistema di telecamere HD per il riconoscimento facciale dei componenti della famiglia","Un chip AI dedicato alla pianificazione del percorso","Un protocollo Wi-Fi a bassa latenza per la connessione all'app"],
-    ans:0,
-    exp:"LiDAR (Light Detection And Ranging) emette impulsi laser e misura il tempo di ritorno per calcolare le distanze. Nei Roborock il sensore rotante sul top del robot scansiona l'ambiente a 360° creando mappe precise e aggiornate in tempo reale."
-  },
-  {
-    q:"Qual è la principale innovazione del Roborock Saros 10, presentato al CES 2025?",
-    opts:["La prima base di ricarica con lavatrice integrata","Il primo robot aspirapolvere con braccio robotico retrattile (OmniGrip) capace di raccogliere oggetti piccoli dal pavimento prima di aspirare","Il primo robot con batteria a idrogeno","La prima navigazione satellitare GPS in un robot domestico"],
+    q:"Cosa include la Clean Base (stazione di svuotamento automatico) dei modelli Roomba con il '+' nel nome?",
+    opts:["Solo la ricarica rapida in 2 ore","Un contenitore con sacchetti AllergenLock che aspira automaticamente lo sporco dal robot dopo ogni sessione — autonomia fino a 60 giorni senza svuotare manualmente","Un sistema di lavaggio automatico del filtro","Ricarica wireless e svuotamento automatico con contenitore riutilizzabile senza sacchetti"],
     ans:1,
-    exp:"Il Roborock Saros 10 è rivoluzionario: il braccio OmniGrip emerge dal corpo del robot per afferrare e spostare piccoli oggetti (calzini, cavi, giocattoli) prima di passare con l'aspirazione. Una novità assoluta nel settore."
+    exp:"La Clean Base usa sacchetti AllergenLock che intrappolano il 99% delle particelle allergeniche. Lo svuotamento automatico avviene dopo ogni pulizia. I sacchetti durano circa 60 giorni (2 mesi) prima di dover essere sostituiti — argomento ideale per i clienti allergici o con animali."
   },
   {
-    q:"Cosa offre la funzione 'ReactiveAI 3.0' di Roborock rispetto alla versione precedente?",
-    opts:["Maggiore velocità di spostamento sul pavimento","Riconoscimento di oltre 100 categorie di ostacoli grazie a sensori strutturati a luce 3D e AI, anche in condizioni di scarsa illuminazione o buio totale","Connessione diretta al cloud senza router Wi-Fi","Mappatura di più piani contemporaneamente"],
+    q:"Qual è la caratteristica distintiva del Roomba s9+ rispetto agli altri modelli Roomba tondi?",
+    opts:["È il più economico della gamma","Ha forma a D con spazzola a tutta larghezza: raggiunge meglio gli angoli e i bordi delle pareti rispetto ai robot tondi, con potenza di aspirazione 40x superiore alla serie 600","È l'unico con navigazione LiDAR","È l'unico modello con funzione mop integrata"],
     ans:1,
-    exp:"ReactiveAI 3.0 usa sensori a luce strutturata 3D che funzionano anche al buio completo. Riconosce oltre 100 categorie di oggetti e ostacoli, classificandoli e decidendo se aggirarli, spostarli (su Saros 10) o aspettare l'intervento dell'utente."
+    exp:"Il Roomba s9+ è il top di gamma per la sola aspirazione: la forma a D con angolo piatto davanti permette alla spazzola a tutta larghezza di arrivare agli angoli a 90°. La potenza 40x superiore alla serie 600 e la Clean Base inclusa lo rendono la scelta per chi vuole il massimo senza lavapavimenti."
   },
   {
-    q:"Qual è la potenza di aspirazione massima del Roborock S8 MaxV Ultra?",
-    opts:["5.000 Pa","10.000 Pa","22.000 Pa — tra le più alte della categoria consumer","35.000 Pa"],
-    ans:2,
-    exp:"Il Roborock S8 MaxV Ultra raggiunge 22.000 Pa di potenza di aspirazione, rendendolo efficace anche su tappeti a pelo lungo e per la raccolta di peli di animali. Il sistema HyperForce garantisce questa potenza in modo costante durante tutta la sessione."
-  },
-  {
-    q:"Cosa include la stazione 'FlexiArm Pro' del Roborock S8 MaxV Ultra?",
-    opts:["Un braccio meccanico che porta il robot al piano superiore autonomamente","Un braccio laterale estensibile sul robot che pulisce angoli e bordi delle pareti che normalmente sfuggono alla spazzola principale","Un sistema di ricarica wireless senza contatti","Un sensore per rilevare macchie di liquidi sul pavimento"],
+    q:"Qual è la principale novità del Roomba Max 705 Combo, il modello lanciato nel 2025?",
+    opts:["È il primo Roomba con navigazione LiDAR laser","Primo Roomba con stazione all-in-one che svuota il robot, rifornisce l'acqua per il mop e lava i pad automaticamente — portando iRobot alla parità con le stazioni Roborock","È il modello più economico con Clean Base","È il primo Roomba con braccio robotico per raccogliere oggetti"],
     ans:1,
-    exp:"Il FlexiArm Pro è un braccio laterale che si estende automaticamente quando il robot si avvicina ai bordi e agli angoli delle pareti, spingendo lo sporco verso la spazzola principale. Risolve uno dei problemi storici dei robot tondi che non riescono a pulire gli angoli a 90°."
+    exp:"Il Roomba Max 705 Combo rappresenta il salto generazionale di iRobot: la stazione Recharge & Resume Max non si limita a svuotare lo sporco, ma rifornisce anche il serbatoio dell'acqua e lava i pad del mop — avvicinando iRobot all'autonomia totale dei concorrenti top di gamma."
   },
   {
-    q:"La stazione tutto-in-uno del Roborock S8 MaxV Ultra svolge quante funzioni in automatico?",
-    opts:["2: ricarica e svuotamento","4: ricarica, svuotamento, rifornimento acqua al serbatoio e lavaggio/asciugatura dei mop","5: ricarica, svuotamento, rifornimento acqua, lavaggio mop e cambio automatico degli accessori","Solo ricarica e lavaggio mop"],
+    q:"Roomba j7+: qual è la funzione AI che lo ha reso famoso e come si chiama ufficialmente?",
+    opts:["Circle to Clean — pulisce in cerchi concentrici attorno ai mobili","P.O.O.P. (Pet Owner Official Promise) — riconosce ed evita gli escrementi di animali domestici grazie alla PrecisionVision Navigation","DirtBoost — aumenta automaticamente la potenza sui tappeti","SmartMap — crea mappe 3D dell'abitazione"],
     ans:1,
-    exp:"La stazione all-in-one del Roborock S8 MaxV Ultra gestisce 4 funzioni automatiche: ricarica la batteria, svuota il contenitore della polvere, riempie il serbatoio dell'acqua del robot e lava + asciuga i mop con acqua calda — il robot è completamente autonomo."
+    exp:"P.O.O.P. (Pet Owner Official Promise) è la garanzia ufficiale di iRobot: se il Roomba j7+ passa su un escremento di animale, l'azienda sostituisce il robot gratuitamente. La funzione usa l'AI per riconoscere gli escrementi e aggirarli — diventata virale sui social e un argomento di vendita irresistibile."
   },
   {
-    q:"iRobot Roomba Combo j9+: qual è la caratteristica che lo distingue dagli altri Roomba nella gestione del mop?",
-    opts:["Il mop è fisso e sempre a contatto con il pavimento","Il mop si solleva automaticamente e si ritrae nel corpo del robot quando rileva un tappeto, tornando in posizione sui pavimenti duri — senza dover creare zone di esclusione nell'app","Il mop usa vapore a 120°C per igienizzare","Il mop è intercambiabile con tre tipologie diverse incluse nella confezione"],
+    q:"Cosa significa la funzione 'Smart Map' nell'app iRobot Home?",
+    opts:["Una mappa scaricata da Internet con la planimetria dell'abitazione","Il robot crea autonomamente una mappa precisa della casa, che l'utente può personalizzare: nominare le stanze, creare zone di pulizia specifiche, zone di esclusione e programmare pulizie per singola stanza","Una funzione che mostra in tempo reale dove si trova il robot senza salvare la mappa","Una mappa condivisa tra più robot iRobot nella stessa casa"],
     ans:1,
-    exp:"Il Roomba Combo j9+ ha un sistema AutoWash Dock che solleva e ritrae il pad bagnato nel corpo del robot non appena rileva un tappeto. Questo evita di bagnare i tappeti senza dover impostare zone di esclusione manuale nell'app iRobot."
+    exp:"Smart Map permette all'utente di vedere la mappa completa della casa sull'app iRobot Home, rinominare le stanze ('Cucina', 'Salone'), definire zone da pulire o escludere, e lanciare la pulizia solo di una stanza specifica — funzione disponibile da j-series e s-series in su."
   },
   {
-    q:"Qual è la serie di punta attuale di iRobot Roomba per la sola aspirazione (senza mop)?",
-    opts:["Roomba 600 series","Roomba j7+","Roomba s9+ — con la sua forma a D permette di pulire meglio gli angoli rispetto ai robot tondi","Roomba i3+"],
-    ans:2,
-    exp:"Il Roomba s9+ è il top di gamma iRobot per la sola aspirazione: forma a D con spazzola a tutta larghezza che raggiunge gli angoli, potenza di aspirazione 40x superiore alla serie 600, stazione di svuotamento automatico Clean Base inclusa."
-  },
-  {
-    q:"Cosa indica la funzione 'Dirt Detect' nei robot Roomba iRobot?",
-    opts:["Un sensore che rileva se il robot è su un tappeto o su un pavimento duro","Sensori acustici e ottici che rilevano zone di sporco concentrato: il robot rallenta e aumenta i passaggi su quell'area finché non è pulita","Un sistema che fotografa lo sporco e invia notifiche all'utente","Un filtro HEPA che rileva le particelle di polvere fine nell'aria"],
+    q:"Qual è la differenza tra Roomba i3+ e Roomba j7+ in termini di navigazione e prezzo?",
+    opts:["Sono identici, diverso solo il colore","i3+ usa navigazione a righe (ordinata ma senza mappa intelligente), j7+ usa PrecisionVision Navigation con mappa AI e riconoscimento ostacoli — j7+ costa di più ma offre molto più controllo e sicurezza","i3+ ha LiDAR, j7+ ha solo fotocamera","j7+ è più economico ma meno potente di i3+"],
     ans:1,
-    exp:"Dirt Detect usa sensori piezoelettrici che 'sentono' acusticamente la quantità di detriti aspirati e sensori ottici per rilevare concentrazioni di sporco. Quando trova una zona sporca, il robot esegue più passaggi intensivi prima di proseguire."
+    exp:"Il Roomba i3+ naviga in modo ordinato a righe ma senza vera mappa intelligente e senza riconoscimento ostacoli avanzato — ottimo rapporto qualità/prezzo. Il j7+ aggiunge PrecisionVision Navigation, riconoscimento di oltre 80 ostacoli, mappa Smart Map personalizzabile e la garanzia P.O.O.P. — fascia di prezzo superiore ma giustificata per chi ha animali o casa complessa."
   },
   {
-    q:"Roborock Q Revo MaxV: a quale fascia di mercato si rivolge e cosa offre?",
-    opts:["Fascia entry-level sotto i 300 euro, solo aspirazione","Fascia media-alta (circa 700–900 euro), con aspirazione, mop vibrante, stazione all-in-one con lavaggio mop e svuotamento automatico — ottimo rapporto qualità/prezzo","Fascia ultra-premium oltre i 1.500 euro, identico all'S8 MaxV Ultra","Fascia entry-level con solo navigazione LiDAR base"],
+    q:"Qual è l'autonomia di batteria indicativa dei modelli Roomba j-series in modalità standard?",
+    opts:["30–45 minuti","Circa 75 minuti — la funzione Recharge & Resume fa tornare il robot a ricaricarsi e poi riprendere la pulizia esattamente da dove si era fermato","120 minuti fissi, poi si spegne","200 minuti grazie alla batteria agli ioni di litio da 5.200 mAh"],
     ans:1,
-    exp:"Il Roborock Q Revo MaxV è il punto di ingresso nella fascia premium di Roborock: offre la stazione all-in-one con auto-svuotamento e lavaggio mop, navigazione LiDAR, 7.000 Pa e mop vibrante a un prezzo più accessibile rispetto all'S8 MaxV Ultra."
+    exp:"I Roomba j-series hanno circa 75 minuti di autonomia. La funzione Recharge & Resume è fondamentale: il robot torna autonomamente alla base, si ricarica quanto necessario e riprende la pulizia dal punto esatto in cui si era fermato — garantendo la pulizia completa anche di case grandi."
   },
   {
-    q:"Qual è la differenza principale tra mop 'vibrante' e mop 'rotante' nei robot lavapavimenti?",
-    opts:["Non c'è differenza pratica, è solo marketing","Il mop vibrante oscilla avanti/indietro con alta frequenza (fino a 3.000 vibrazioni/min) per strofinare le macchie; il mop rotante ha dischi che girano in senso contrario esercitando pressione — entrambi più efficaci del semplice trascinamento passivo","Il mop vibrante usa vapore, quello rotante acqua fredda","Il mop rotante è solo per pavimenti in legno, quello vibrante per ceramica"],
+    q:"Cosa si intende per 'Imprint Link Technology' nei prodotti iRobot?",
+    opts:["Un sistema di aggiornamento firmware via cloud","La tecnologia che permette al robot aspirapolvere Roomba di coordinarsi automaticamente con il lavapavimenti Braava jet — il Roomba aspira prima, poi avvisa il Braava di iniziare a lavare la stessa area","Un protocollo di sicurezza per la connessione Wi-Fi del robot","La tecnologia di ricarica rapida dei modelli premium"],
     ans:1,
-    exp:"Il mop vibrante (usato su molti Roborock) oscilla ad alta frequenza simulando lo strofinamento manuale. Il mop rotante (usato su Roborock S8 MaxV Ultra e altri top) ha dischi che ruotano esercitando pressione sul pavimento — entrambi molto più efficaci del semplice trascinamento passivo tipico dei robot economici."
+    exp:"Imprint Link permette a un Roomba e a un Braava jet m6 di lavorare in sequenza automatica: il Roomba aspira tutta la casa, poi passa il testimone al Braava che lava gli stessi pavimenti. Zero intervento manuale — da proporre ai clienti che vogliono il massimo dell'automazione domestica."
   },
   {
-    q:"Cosa significa 'mappatura multi-piano' in un robot aspirapolvere?",
-    opts:["Il robot può salire le scale autonomamente","Il robot crea e salva mappe separate per ogni piano della casa: riconosce su quale piano si trova e applica le impostazioni/programmi specifici per quell'area","Il robot mappa solo i pavimenti, non considera i mobili in altezza","Una funzione per mappare l'esterno della casa"],
+    q:"Roomba Combo Essential (serie entry-level 2024): a quale cliente si rivolge e cosa NON include rispetto ai modelli superiori?",
+    opts:["Si rivolge a professionisti, include tutto tranne la Clean Base","Si rivolge a chi cerca il primo robot a basso costo: navigazione semplificata senza mappa Smart Map avanzata, senza riconoscimento ostacoli AI, senza Clean Base — ideale per piccoli appartamenti con pochi mobili","Include la Clean Base ma non il mop","È identico al j3 ma senza Wi-Fi"],
     ans:1,
-    exp:"Con la mappatura multi-piano il robot memorizza mappe distinte per ogni livello dell'abitazione. Quando viene portato a un piano diverso, lo riconosce automaticamente e carica la mappa corretta con le relative zone di pulizia, esclusioni e programmi personalizzati."
+    exp:"La serie Essential è il punto di ingresso iRobot: prezzo accessibile, navigazione reattiva di base, connessione Wi-Fi e app iRobot. Non ha Smart Map avanzata, niente PrecisionVision, niente Clean Base. Ideale per monolocali, prime case o clienti con budget limitato che vogliono provare il mondo dei robot."
   },
   {
-    q:"Un cliente ha due gatti e pavimenti misti (parquet + tappeti). Quale robot consiglieresti e perché?",
-    opts:["Un Roomba 600 series — economico e sufficiente","Roborock S8 MaxV Ultra o Roomba Combo j9+: alta potenza per peli (22.000 Pa / potenza 40x), mop che si solleva automaticamente sui tappeti e stazione che gestisce tutto in autonomia","Un robot entry-level senza mop — i peli non richiedono mop","Qualsiasi robot va bene, i peli di gatto sono leggeri"],
+    q:"Il Roomba j9+ introduce quale miglioramento rispetto al j7+ in termini di aspirazione?",
+    opts:["Stessa potenza, diverso solo il design","Potenza di aspirazione aumentata del 100% rispetto a j7+, con sistema di raccolta detriti migliorato per peli di animali lunghi — in più include la Clean Base di nuova generazione con sacchetti più capienti","Aggiunge la navigazione LiDAR","Aggiunge la ricarica wireless della base"],
     ans:1,
-    exp:"Per peli di animali e pavimenti misti servono: alta potenza di aspirazione (almeno 5.000 Pa, meglio 10.000+), filtro ad alta efficienza, sistema mop che si solleva automaticamente sui tappeti (evitando di bagnarli) e stazione di svuotamento automatico per non dover svuotare manualmente ogni giorno."
+    exp:"Il Roomba j9+ raddoppia la potenza di aspirazione rispetto a j7+, migliorando notevolmente le prestazioni su tappeti e con peli di animali lunghi. La nuova Clean Base ha un contenitore più capiente. Mantiene tutta la PrecisionVision Navigation e aggiunge il sistema di sollevamento automatico del mop nella versione Combo j9+."
   },
   {
-    q:"Cosa si intende per 'zona di esclusione virtuale' (No-Go Zone) nell'app di un robot aspirapolvere?",
-    opts:["Un'area della casa senza Wi-Fi dove il robot non riceve comandi","Un'area definita dall'utente direttamente sulla mappa digitale che il robot non deve mai attraversare o pulire — senza barriere fisiche","Un perimetro fisico creato da nastro magnetico sul pavimento","Una funzione che esclude automaticamente le aree sporche dalla pulizia"],
+    q:"Come funziona la ricarica del robot e la ripresa della pulizia (Recharge & Resume) nei modelli Roomba con Clean Base?",
+    opts:["Il robot deve essere posizionato manualmente sulla base dall'utente","Il robot torna autonomamente alla Clean Base quando la batteria scende sotto una soglia critica, si ricarica automaticamente, poi riprende la pulizia dal punto esatto dove si era fermato — senza intervento dell'utente","Il robot aspetta che l'utente lo ricarichi e poi riparte dall'inizio","Recharge & Resume funziona solo con Wi-Fi attivo"],
     ans:1,
-    exp:"Le No-Go Zone sono aree 'virtuali' disegnate dall'utente sulla mappa dell'app: il robot le riconosce grazie alla navigazione LiDAR/visiva e non le attraversa mai, senza bisogno di barriere fisiche. Utile per ciotole degli animali, cavi pericolosi, zone con oggetti fragili."
+    exp:"Recharge & Resume è completamente autonomo: il robot calcola la batteria rimanente, torna alla base quando necessario, si ricarica (anche parzialmente se basta) e riprende esattamente da dove aveva lasciato. Indispensabile per case grandi oltre i 100 mq — argomento chiave per chi ha appartamenti o ville."
   },
   {
-    q:"Qual è la durata media della batteria in modalità aspirazione standard di un robot top di gamma come Roborock S8 MaxV Ultra?",
-    opts:["30–45 minuti","Circa 180 minuti (3 ore) su pavimenti duri in modalità standard — sufficiente per case fino a 200–250 mq","60–90 minuti","Oltre 6 ore in modalità eco"],
+    q:"Qual è la frequenza di aggiornamento delle mappe Smart Map nei Roomba j/s-series?",
+    opts:["Le mappe si aggiornano solo manualmente tramite app","Le mappe si aggiornano automaticamente a ogni sessione di pulizia: il robot impara i cambiamenti nell'ambiente (mobili spostati, porte aperte/chiuse) e adatta la mappa in tempo reale","Le mappe si aggiornano solo una volta al mese tramite cloud","Le mappe sono fisse una volta create e non cambiano"],
     ans:1,
-    exp:"I robot top di gamma come Roborock S8 MaxV Ultra hanno batterie da 5.200 mAh con autonomia di circa 180 minuti in modalità standard su pavimenti duri. La modalità Max (potenza massima) riduce l'autonomia a circa 90–120 minuti. La funzione Recharge & Resume consente al robot di tornare a ricaricarsi e riprendere la pulizia dove si era fermato."
+    exp:"I Roomba j/s-series con Smart Map imparano continuamente dall'ambiente: ogni sessione aggiorna la mappa con i cambiamenti rilevati (nuovo mobile, sedia spostata, porta chiusa). Nel tempo la mappa diventa sempre più precisa e il robot sempre più efficiente — argomento forte per chi vuole un robot che 'migliora da solo'."
   },
   {
-    q:"Un cliente vuole un robot che 'faccia tutto da solo' per almeno 2 mesi senza intervento. Quale caratteristica è indispensabile?",
-    opts:["Solo un'alta potenza di aspirazione in Pa","Stazione all-in-one con svuotamento automatico (contenitore 2,5–3,5 lt), rifornimento automatico dell'acqua, lavaggio e asciugatura automatica dei mop — il robot deve gestire tutte le fasi del ciclo di pulizia","Basta una buona mappatura LiDAR","Un robot con controllo vocale Alexa o Google"],
+    q:"Cosa significa la compatibilità con Alexa e Google Home nei robot Roomba?",
+    opts:["Il robot si connette direttamente agli speaker smart senza app iRobot","L'utente può avviare, fermare, mettere in pausa e mandare il robot in dock con comandi vocali — es. 'Alexa, avvia la pulizia del salone con Roomba'","Solo la visualizzazione dello stato del robot sugli schermi Echo Show","Compatibilità solo con Echo Dot, non con Google Home"],
     ans:1,
-    exp:"Per 2 mesi di autonomia totale servono: stazione con svuotamento automatico (il serbatoio da 3,5 lt dura 30–60 giorni), rifornimento automatico dell'acqua per il mop, lavaggio automatico dei mop (altrimenti si sporcano e lasciano odori) e asciugatura dei mop (per evitare muffe). Solo i top di gamma con stazione all-in-one garantiscono questa autonomia completa."
+    exp:"Grazie all'integrazione con Alexa e Google Assistant, il Roomba risponde a comandi vocali completi: avvio/pausa/stop pulizia, pulizia di una stanza specifica ('Avvia la pulizia della cucina'), invio alla base di ricarica. Funziona anche tramite routine automatizzate — es. 'Alexa, quando esco di casa, avvia il Roomba'."
+  },
+  {
+    q:"Qual è la differenza pratica tra il filtro standard e il filtro ad alta efficienza (High-Efficiency) dei Roomba premium?",
+    opts:["Non c'è differenza, è solo marketing per vendere ricambi","Il filtro ad alta efficienza cattura il 99% delle particelle allergeniche, pollini e particelle fini PM2.5 — fondamentale per famiglie con allergici, asmatici o animali domestici","Il filtro premium dura 10 anni senza sostituzione","Il filtro ad alta efficienza riduce il rumore del motore"],
+    ans:1,
+    exp:"Il filtro High-Efficiency è un argomento di vendita potente: cattura il 99% delle particelle allergeniche inclusi acari, pollini e peli di animali. Da abbinare sempre alla Clean Base con sacchetti AllergenLock per i clienti allergici — il robot non rilascia nell'aria quello che ha raccolto."
+  },
+  {
+    q:"Un cliente ha 3 cani, pavimenti misti parquet e tappeti persiani, e vuole non pensarci per almeno 2 mesi. Quale Roomba consiglieresti?",
+    opts:["Roomba Essential — economico, fa il lavoro base","Roomba Combo j9+ con Clean Base: mop retrattile automatico sui tappeti, PrecisionVision per evitare i giocattoli dei cani, potenza raddoppiata rispetto a j7+ per i peli, sacchetti AllergenLock per 60 giorni di autonomia","Roomba i3+ — navigazione a righe, buon rapporto qualità prezzo","Roomba s9+ — forma a D ottima per gli angoli, ma senza mop per i pavimenti"],
+    ans:1,
+    exp:"Il Roomba Combo j9+ è la risposta perfetta: 3 cani = tanti peli (potenza massima j9+), tappeti persiani da non bagnare (mop retrattile automatico senza zone di esclusione), casa complessa (PrecisionVision), 2 mesi senza pensarci (Clean Base con sacchetti 60 giorni). Argomento completo per giustificare il prezzo premium."
+  },
+  {
+    q:"Qual è il vantaggio dell'app iRobot Home rispetto alle app dei concorrenti entry-level?",
+    opts:["L'app iRobot ha meno funzioni ma è più semplice da usare","L'app iRobot Home offre: Smart Map personalizzabile per stanza, programmazione per singola stanza/zona, cronologia pulizie con mappa del percorso, notifiche intelligenti, integrazione Alexa/Google e aggiornamenti firmware automatici","L'app funziona solo su iPhone, non su Android","L'app iRobot è a pagamento dopo il primo anno"],
+    ans:1,
+    exp:"L'app iRobot Home è uno degli ecosistemi software più completi del settore: mappe personalizzabili per stanza, storico delle pulizie con mappa del percorso percorso, zone preferite e di esclusione, programmazione avanzata, comandi vocali integrati e aggiornamenti OTA automatici che migliorano il robot nel tempo."
   }
 ];
 
@@ -271,7 +271,7 @@ function showReg(){
         </div>
       </div>
       <div class="info-box">
-        ⏱ Hai <strong>6 minuti</strong> per completare il test.<br>
+        ⏱ Hai <strong>9 minuti</strong> per completare il test.<br>
         Superato il tempo, ogni domanda non risposta vale <strong>-1 punto</strong> di penalità.
       </div>
       <button class="btn-start" onclick="startQuiz()">Inizia il test →</button>
@@ -397,7 +397,7 @@ function showResults(){
       <h3>Risposte errate (${wrongAnswers.length})</h3>
       ${wrongAnswers.map(w=>`<div class="wrong-item"><strong>D.${w.num}: ${w.q}</strong>Tua risposta: ${w.given}<br>Risposta corretta: ${w.correct}</div>`).join('')}
     </div>`:'<p style="font-size:13px;color:var(--green-mid);margin-bottom:1.5rem;text-align:center;">Nessuna risposta errata!</p>';
-  const penHTML=penaltyPoints>0?`<div class="penalty-note">Penalità tempo: -${penaltyPoints} pt (domande non completate entro 6 min)</div>`:'';
+  const penHTML=penaltyPoints>0?`<div class="penalty-note">Penalità tempo: -${penaltyPoints} pt (domande non completate entro 9 min)</div>`:'';
   app.innerHTML=`
     <div class="res-card">
       <div class="res-user">${userData.fullName} · ${userData.store}</div>
@@ -425,7 +425,7 @@ function sendMail(finalScore,pct){
   const wrongLines=wrongAnswers.length>0
     ?wrongAnswers.map(w=>`  D.${w.num}: ${w.q}\n  Risposta data: ${w.given}\n  Risposta corretta: ${w.correct}`).join('\n\n')
     :'  Nessuna risposta errata - punteggio perfetto!';
-  const body=`RISULTATO TEST ROBOT ASPIRAPOLVERE
+  const body=`RISULTATO TEST IROBOT ROOMBA
 ====================================================
 Nome:           ${userData.fullName}
 Punto vendita:  ${userData.store}
@@ -444,7 +444,7 @@ ${wrongLines}
 
 ====================================================
 DML Italia · Test Formazione Prodotto · ${now.getFullYear()}`;
-  const subject=`[Quiz Robot Aspirapolvere] ${userData.fullName} — ${userData.store} — ${finalScore}/20 (${pct}%)`;
+  const subject=`[Quiz iRobot Roomba] ${userData.fullName} — ${userData.store} — ${finalScore}/20 (${pct}%)`;
   window.location.href=`mailto:${DEST_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   document.getElementById('mail-sent').style.display='block';
 }
